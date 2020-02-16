@@ -1,0 +1,59 @@
+//rechercher films par genre
+
+
+ $req = $DB->query('SELECT * FROM film');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> nom. "<br/>";
+ }
+
+
+//rechercher film par nom
+
+ $req = $DB->query('SELECT * FROM film');
+
+while($d = $req->fetch( PDO::FETCH_OBJ)){
+ $req = $DB->query('SELECT * FROM film');
+
+while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+   echo $d-> titre. "<br/>";
+}
+   echo $d-> titre. "<br/>";
+}
+
+//rechercher film par distributeur
+
+$req = $DB->query('SELECT * FROM distrib');
+
+while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+   echo $d-> nom. "<br/>";
+}
+
+
+//rechercher un membre par son prenom
+
+$req = $DB->query('SELECT * FROM fiche_personne');
+
+while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+   echo $d-> prenom. "<br/>";
+}
+
+
+//rechercher un membre par son nom
+
+$req = $DB->query('SELECT * FROM fiche_personne');
+
+while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+   echo $d-> nom. "<br/>";
+}
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+For distrib filter : SELECT titre, distrib.id_distrib FROM film INNER JOIN distrib ON distrib.id_distrib = film.id_distrib WHERE distrib.nom = 'cinefilm'; 
+
+For genre filter: SELECT titre, genre.nom FROM film INNER JOIN genre ON film.id_genre = genre.id_genre WHERE genre.nom = 'comedy';
+
+ For distrib & genre filter : SELECT titre, distrib.id_distrib, genre.nom FROM film INNER JOIN distrib ON distrib.id_distrib = film.id_distrib INNER JOIN genre ON genre.id_genre = film.id_genre WHERE distrib.nom LIKE '%ez%' AND genre.nom = 'comedy';
+
+ For film that are still being shown: SELECT titre, date_fin_affiche FROM film WHERE DATE(date_fin_affiche) > '2008-00-11'; 
+
+To search an user by name or surname: SELECT * FROM fiche_personne WHERE nom LIKE '%%' AND prenom LIKE '%%';
+
+ To get subscription from a member: SELECT * FROM membre INNER JOIN fiche_personne ON id_fiche_perso = id_perso WHERE id_perso = 45; Change a member's subscription: UPDATE membre SET id_abo = '1' WHERE id_fiche_perso = 1;
+
+ Get a member's film history: SELECT titre, date FROM historique_membre INNER JOIN film ON historique_membre.id_film = film.id_film WHERE id_membre = 1;
+
+
+<?php include 'requette'; if (isset($_POST['identifantFOrmulair'])) { 
+switch ($_POST['identifantFOrmulair']) { 
+case '0': $filmParGenre = genre();
+ break;
+case '1': $resultatUtilsiateur = 'ta function'; 
+break;
+default: # code... 
+break; 
+}
+ }
+ if (isset($filmParGenre)) { 
+
+include 'resulatfilm.php'; } 
+
+if (isset($resulatutilisateur)) { 
+
+include 'une autre page .php'; 
+} 
+else { 
+include "page d'acucueil par default.php";
+ } 
+?>
+
+ <!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title> 
+</head> 
+<body> 
+<form action="request.php"> 
+<select name="zez" id=""> 
+<option value="aze">hghghg</option> 
+</select> 
+<input type="text" name="identifantFOrmulair" class="none" value="0">
+ <input type="submit" value="su"> </form>
+
+
+ <form action="request.php">
+ <select name="zez" id="">
+ <option value="aze">hghghg</option> </select>
+ <input type="text" name="identifantFOrmulair" class="none" value="1">
+ <input type="submit" value="su"> </form> </body> </html>

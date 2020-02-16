@@ -1,0 +1,251 @@
+  //requette pour afficher tous les id dans la table abonnement
+
+
+   $req = $DB->query('SELECT * FROM abonnement');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> id_abo. "<br/>";
+ }
+
+
+   //requette pour afficher tous les id dans la table abonnement
+
+
+   $req = $DB->query('SELECT * FROM abonnement');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> nom. "<br/>";
+ }
+
+   //requette pour afficher tous les id dans la table abonnement
+
+
+   $req = $DB->query('SELECT * FROM abonnement');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> resum. "<br/>";
+ }
+
+   //requette pour afficher tous les id dans la table abonnement
+
+
+   $req = $DB->query('SELECT * FROM abonnement');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> prix. "<br/>";
+ }
+
+   //requette pour afficher tous les id dans la table abonnement
+
+
+   $req = $DB->query('SELECT * FROM abonnement');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> duree_abo. "<br/>";
+ }
+ 
+
+
+
+
+
+
+
+
+ //requette pour afficher tous les id dans la table distrib
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> id_distrib. "<br/>";
+ }
+
+
+   //requette pour afficher tous les noms dans la table distrib
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> nom . "<br/>";
+ }
+
+   //requette pour afficher tous les numeros de telephone dans la table distrib
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> telephone . "<br/>";
+ }
+
+   //requette pour afficher toutes les adresses dans la table distrib
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> adresse. "<br/>";
+
+ }
+
+   //requette pour afficher tous les code postaux dans la table distrib
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> cpostal. "<br/>";
+ }
+
+   //requette pour afficher toutes les villes dans la table distrib
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> ville. "<br/>";
+ }
+
+   //requette pour afficher tous les pays dans la table distrib
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> pays . "<br/>";
+ }
+
+
+
+
+
+
+
+
+ //requette pour afficher tous les noms dans la table genre
+
+$req = $DB->query('SELECT * FROM genre');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d->nom . "<br/>";
+ }
+
+ //requette pour afficher tous les id dans la table genre
+
+ $req = $DB->query('SELECT * FROM genre');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> id_genre. "<br/>";
+ }
+
+
+
+
+
+
+  //requette pour afficher tous les id dans la table fiche_personne
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> id_perso. "<br/>";
+ }
+
+   //requette pour afficher tous les noms dans la table fiche_personne
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> nom. "<br/>";
+ }
+
+   //requette pour afficher tous les prenoms dans la table fiche_personne
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> prenom . "<br/>";
+ }
+
+   //requette pour afficher toutes les date de naissance dans la table fiche_personne
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> date_naissance . "<br/>";
+ }
+
+   //requette pour afficher tous les emails dans la table fiche_personne
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> email . "<br/>";
+ }
+
+   //requette pour afficher toutes les adresses dans la table fiche_personne
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> adresse . "<br/>";
+ }
+
+   //requette pour afficher tous les codes postaux dans la table fiche_personne
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> cpostal . "<br/>";
+ }
+
+   //requette pour afficher toutes les villes dans la table fiche_personne
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> id_abo. "<br/>";
+ }
+
+   //requette pour afficher tous les pays dans la table fiche_personne
+
+
+   $req = $DB->query('SELECT * FROM distrib');
+
+ while($d = $req->fetch( PDO::FETCH_OBJ)){
+
+    echo $d-> pays . "<br/>";
+ }
+ 

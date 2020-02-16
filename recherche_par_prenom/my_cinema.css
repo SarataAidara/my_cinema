@@ -1,0 +1,121 @@
+body{
+    background-color:rgba(147, 202, 248, 0.897);
+    background-image: url("../cinema.jpg")
+}
+
+.nav__li{
+    font-size: 15px;
+    padding: 0.5%;
+}
+
+.nav__ul{
+    padding: 0;
+}
+
+.nav__link{
+    text-decoration: none;
+    list-style: none;
+    color: blue;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+}
+
+h2{
+    text-align: center;
+    color: blue;
+}
+
+div{
+    text-align: center;
+}
+
+.none{
+    display: none;
+}
+
+.membre{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 15px;
+    text-align: left;
+}
+
+#genre{
+    background-color: yellow;
+    padding: 2%;
+    font-size: 20px;
+    text-align: center;
+    color: blue;
+    width: 80%;
+}
+
+p{
+    color: blue;
+    font-size: 30px;
+}
+#resum{
+    background-color: yellow;
+    padding: 2%;
+    font-size: 20px;
+    text-align: center;
+    color: blue;
+    width: 80%;
+
+}
+
+#distrib{
+    background-color: yellow;
+    padding: 2%;
+    font-size: 20px;
+    text-align: center;
+    color: blue;
+    width: 80%;
+
+}
+
+#select{
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+form{
+    text-align: center;
+    border: 5px solid yellow;
+    box-shadow: 3px 3px 3px 3px yellow;
+    width: 30%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+
+label{
+    color: blue;
+    font-size: 30px;
+}
+
+label.fullname2{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 15px;
+    text-align: left;
+}
+
+input{
+    border: 1px yellow solid;
+    color: yellow;
+    box-shadow: 2px 2px 2px 2px yellow;
+    background-color: blue;
+    font-size: 25px;
+    font-style: normal;
+    font-family: Verdana,Arial sans-serif;
+    margin-bottom: 7%;
+    margin-top: 2%;
+}
+
+nav{
+    margin-top: 2%;
+}
